@@ -1308,3 +1308,11 @@ h3, .card h3 {
   font-weight: bold;
   margin: 1.5rem auto 0.75rem auto;
 }
+
+/* CODE */
+p,ul,ol,blockquote {
+  code {
+    background-color: lightblue;
+    padding: 0 0.075rem;
+  }
+}

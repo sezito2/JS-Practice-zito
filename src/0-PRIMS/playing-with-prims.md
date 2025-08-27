@@ -47,11 +47,21 @@ In your group, create a suite of the following primitives about a topic of your 
 
 ### Strings
 
+Concatenate them with `+` operator.
+
+```javascript
+// Convert and play
+```
+
+Access position of individual characters at index.
+
 ```javascript
 // Convert and play
 ```
 
 ### Numbers
+
+Use arithmetic operators to yield computations: `+`, `-`, `*`, `/`, etc.
 
 ```javascript
 // Convert and play
@@ -63,9 +73,13 @@ In your group, create a suite of the following primitives about a topic of your 
 
 ### Array
 
+Log your simple Array of Strings to the console, so we can check out what built-in methods we can use for Arrays.
+
 ```javascript
 // Convert and play
 ```
+
+Log your Array of Objects to the console, so we can check out what built-in methods we can use for Objects.
 
 ### Array of Objects
 
