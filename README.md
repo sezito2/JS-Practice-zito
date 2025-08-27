@@ -29,13 +29,13 @@ A typical Framework project looks like this:
 ```ini
 .
 ├─ src
-│  ├─ components
-│  │  └─ timeline.js           # an importable module
-│  ├─ data
-│  │  ├─ launches.csv.js       # a data loader
-│  │  └─ events.json           # a static data file
 │  ├─ 0-PRIMS
 │  │  └─ playing-with-prims.md # a practice page about primitives
+│  ├─ assets
+│  |  ├─ images                # Add images
+│  |  └─ js                    # Add custom js
+│  ├─ components               # Add importable modules to use everywhere
+│  ├─ data                     # Add data
 │  └─ index.md                 # the home page
 ├─ .gitignore
 ├─ observablehq.config.js      # the app config file
