@@ -2,6 +2,8 @@
 
 Repo for the class to practice JS during class.
 
+Please **FORK** and **CLONE** to your ***personal profile***.
+
 ## Getting Started
 
 This is an [Observable Framework](https://observablehq.com/framework/) app. To install the required dependencies, run:
