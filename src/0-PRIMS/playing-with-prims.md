@@ -2,6 +2,10 @@
 
 Let's start our JS journey by creating our own sandbox of primitives.
 
+<p class="note">
+  Like always, let's start by creating a branch for this page, so we can separate our work.
+</p>
+
 ## 1. Primitives: Declaring & Assigning Variables
 
 In your group, create a suite of the following primitives about a topic of your choice. For example, if the Strings are about ingredients to make a dish, then numbers could represent the measurement amount.
