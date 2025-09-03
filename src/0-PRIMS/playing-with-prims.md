@@ -16,29 +16,42 @@ In your group, create a suite of the following primitives about a topic of your 
 - 1 array for the Numbers
 - 1 array of 5 objects that combines the Strings and Numbers into 1
 
-```javascript
-/**
- * Convert and declare here!
-**/
-// 5 Strings with `let`
+```js
+// 5 Strings
+let strawberry = "Fruit"
+let carrot = "Vegetable"
+let cheese = "Dairy"
+let chicken = "Protein"
+let bread = "Grain"
 
-
-// 5 Numbers with `const`
+// 5 const numbers
+const shot = 4
+const small = 12
+const medium = 16
+const large = 18
+const extraLarge = 24
 
 
 // 1 array for the Strings with the variable names
-
+let foods = [strawberry, carrot, cheese, chicken, bread]
 
 // 1 array for the Numbers with the variable names
-
+let cupSizes = [shot, small, medium, large, extraLarge]
 
 /**
  * 1 array of 5 objects that combines the Strings
  * and Numbers into 1 object as 2 properties of
  * each object
 **/
+let foodOrder = [
+  {foodGroup: strawberry, drink: shot},
+  {foodGroup: carrot, drink: small},
+  {foodGroup: cheese, drink: medium},
+  {foodGroup: chicken, drink: large},
+  {foodGroup: bread, drink: extraLarge},
+]
 
-
+console.log(foodOrder)
 ```
 
 ## 2. Playing with Our Data in the Web Console
@@ -47,22 +60,23 @@ In your group, create a suite of the following primitives about a topic of your 
 
 Concatenate them with `+` operator.
 
-```javascript
+```js
 // Convert and play
+cheese+" and "+chicken
 ```
 
 Access position of individual characters at index.
 
-```javascript
-// Convert and play
+```js
+strawberry[0]
 ```
 
 ### Numbers
 
 Use arithmetic operators to yield computations: `+`, `-`, `*`, `/`, etc.
 
-```javascript
-// Convert and play
+```js
+extraLarge/shot
 ```
 
 ## 3. Finding Built-In Docs Arrays & Objects in the Web Console
@@ -72,15 +86,15 @@ Use arithmetic operators to yield computations: `+`, `-`, `*`, `/`, etc.
 Log your simple Array of Strings to the console, so we can check out what built-in methods we can use for Arrays.
 
 ```javascript
-// Convert and play
+console.log(cupSizes)
 ```
 
 Log your Array of Objects to the console, so we can check out what built-in methods we can use for Objects.
 
 ### Array of Objects
 
-```javascript
-// Convert and play
+```js
+console.log(foodOrder[2].foodGroup)
 ```
 
 ## 4. (Block) Scope & Conditional Statements
