@@ -11,6 +11,9 @@ export default {
       name: "Practice Pages",
       pages: [
         {name: "Playing with Primitives", path: "/0-PRIMS/playing-with-prims"},
+        {name: "Arrays", path: "/01-Arrays-Strings-Dates/arrays"},
+        {name: "Strings", path: "/01-Arrays-Strings-Dates/strings"},
+        {name: "Dates", path: "/01-Arrays-Strings-Dates/dates"},
       ]
     }
   ],
@@ -34,5 +37,5 @@ export default {
   // typographer: false, // smart quotes and other typographic improvements
   preserveExtension: true, // drop .html from URLs
   // preserveIndex: false, // drop /index from URLs
-  style: "style.css", // Global CSS styles
+  // style: "style.css", // Global CSS styles
 };
