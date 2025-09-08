@@ -14,6 +14,7 @@ export default {
         {name: "Arrays", path: "/01-Arrays-Strings-Dates/arrays"},
         {name: "Strings", path: "/01-Arrays-Strings-Dates/strings"},
         {name: "Dates", path: "/01-Arrays-Strings-Dates/dates"},
+        {name: "Objects, Mapping & Functions", path: "/02-Objects-Mapping-Funcs/omf"},
       ]
     }
   ],
