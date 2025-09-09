@@ -25,6 +25,9 @@ room
 ```
 
 ## Attach dataset
+```js
+import {utcParse,utcFormat} from "d3-time-format"
+```
 
 Attach the following CSV file with D3's `FileAttachment()` to a constant `ncVotersAll`: `/src/data/nc-voters/nc_absentee_mail_2024_random_n20000.csv`.
 
@@ -60,7 +63,7 @@ Let's create a date parser with D3's `utcParse()` that requires a [date string s
 
 ```js
 // We need a specifier that matches `00/00/0000`
-const dateParser = d3.utcParse("%m/%d/%Y")
+const dateParser = d3.timeParse("%m/%d/%Y")
 
 let testDateObj = dateParser(testDateString)
 
@@ -93,9 +96,11 @@ Ok, with this plan in place, we need to remember that function is a scoped block
 
 What input parameters should we pass to our function?
 
-1. ballot_req_dt
-2. ballot_send_dt
-3. ballot_rtn_dt
+1. `ncVotersAll` - Array of objects
+2. Keys:
+   1. `ballot_req_dt`
+   2. `ballot_send_dt`
+   3. `ballot_rtn_dt`
 
 ### 3. Writing our function
 
@@ -115,14 +120,25 @@ Let's start by naming our function. Naming functions follows a general scheme of
   </ol>
 </div>
 
-```javascript
-// Whatever I return from my function is what is assigned to our new variable
-const dateParse = utc ("%U,%m/%Y")
-let ncVotersAllUpdated = mapDateObjects(
-  ballot_req_dt_obj:
-  ballot_send_dt_obj:
-  ballot_rtn_dt_obj:
-)
+```js
+const dateParse = d3.timeParse("%m/%d/%y")
+const mapDateObjects = (data, dateKey) => {
+  const upDated = data.map(
+    (voter) => {
+      voter.ballot_req_dt_obj = dateParse(voter.ballot_req_dt)
+      return voter
+    }
+  )
+  return upDated
+}
+```
+
+```js
+let ncVotersAllUpdated = mapDateObjects(ncVotersAll, "ballot_req_dt")
+console.log(ncVotersAllUpdated)
+```
+```js
+ncVotersAllUpdated
 ```
 
 ## Output our newly updated Array of objects
