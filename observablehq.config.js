@@ -16,6 +16,7 @@ export default {
         {name: "Dates", path: "/01-Arrays-Strings-Dates/dates"},
         {name: "Objects, Mapping & Functions", path: "/02-Objects-Mapping-Funcs/omf"},
         {name: "Midterm Practice", path: "/03-Midterm-Practice/01-mt-funcy"},
+        {name: "Describe Me", path: "/03-Midterm-Practice/02-describe-me"},
       ]
     }
   ],
